@@ -1,0 +1,114 @@
+include head.jade
+body
+  #content
+    #first-segment
+      include main_menu.jade
+          
+      div(class="segment headline-bg")
+        div(class="segment headline")
+          img(src="img/logo.png")
+          h1 U zlaté koruny <div class="smaller">tam, kde čajem voní celá ulička</div>
+          .separator
+          
+    
+    #second-segment  
+      div(class="segment text padding")
+        
+        h2 About us, hello
+        p 
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          
+        img(src="img/maps_placeholder.png")
+          
+        h2 Opened at
+        p
+          | Po-Pá: 09:00-18:00 <br>
+          | Sobota: 09:00-12:00
+        hr  
+        h2 Contact
+        p
+          | Address: Company address 354, 620 01 City<br>
+          | Phone: +420 555 333 222<br> 
+        hr
+          
+        ul
+          li apples
+          li windows
+          li linuxexes
+        
+    #thirdh-segment
+      div(class="segment headline")
+        h2 Poradna <div class="smaller">zeptejte se na cokoliv</div>
+        .separator
+          
+    #fourth-segment  
+      div(class="segment text")
+        
+        .question-preview-wrap(class="clear-both")
+          .question-preview-avatar
+            .question-avatar(style="background-image: url('../img/miniture_avatar01.png');")
+            .person-name Frenk 195
+          .question-preview-text
+            h2 <a href="#">[Answered] Černý čaj na bolesti hlavy</a>
+            p 
+              | Lorem ipsum dolor sit amet, consectetur ad ipisicing elit, sed do eius mod
+              | tempor in cididu nt ut...
+            hr
+            em 15/5/2016
+            em <div class="comment-icon"></div> 15 comments
+        
+        .question-preview-wrap(class="clear-both")
+          .question-preview-avatar
+            .question-avatar(style="background-image: url('../img/miniture_avatar02.png');")
+            .person-name Eliz27
+          .question-preview-text
+            h2 <a href="#">Dává se mléko do čaje?</a>
+            p 
+              | Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiu smod
+              | tempor incididunt ut...
+            hr
+            em 04/6/2016
+            em <div class="comment-icon"></div> 8 comments
+        
+        .question-preview-wrap(class="clear-both")
+          .question-preview-avatar
+            .question-avatar(style="background-image: url('../img/miniture_avatar03.png');")
+            .person-name Jenny Fellon
+          .question-preview-text
+            h2 <a href="#">[Answered] rum do čaje, tatranský čaj</a>
+            p 
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut...
+            hr
+            em 2/2/2015
+            em <div class="comment-icon"></div> 12 comments
+            
+        .question-preview-wrap(class="clear-both")
+          .question-gradient-fadeout <!--this is a fade out element-->
+          .question-preview-avatar
+            .question-avatar(style="background-image: url('../img/miniture_avatar03.png');")
+            .person-name Jenny Fellon
+          .question-preview-text
+            h2 <a href="#">[Answered] rum do čaje, tatranský čaj</a>
+            p 
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | tempor incididunt ut...
+            hr
+            em 2/2/2015
+            em <div class="comment-icon"></div> 12 comments
+            
+        .dot-dot-dot
+          .dot
+          .dot
+          .dot
+        p.consult A dalším 327 chytrých dotazů
+        button(class="consult", onclick="location.href='consulting.html';") poradíme
+
+      include footer.jade
+
+  // JavaScrirpt
+  // smoothscroll + jQuery
+  script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+  script(type="text/javascript", src="../js/smoothscroll.js")

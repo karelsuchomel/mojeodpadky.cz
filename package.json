@@ -1,0 +1,25 @@
+{
+  "name": "mojecaje_static",
+  "version": "1.0.0",
+  "description": "static shell of the website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mojecaje.cz"
+  ],
+  "author": "Karel Suchomel",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-ftp-deploy": "^0.1.10"
+  }
+}
