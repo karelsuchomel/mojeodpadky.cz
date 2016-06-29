@@ -19,12 +19,10 @@
         float: right
         position: relative
         overflow: hidden
-        height: 42px
-        box-sizing: border-box
         display: inline-block
         padding: 10px 30px
         border: 1px solid $accent-color
-        margin-left: 25px
+        margin-left: 15px
         border-radius: 3px
         transition: 0.2s
 
@@ -35,16 +33,12 @@
           font-weight: 600
           color: $accent-color
 
-        &:hover
+        &:hover, &:active
           .menu-text
             color: white
             transition: 0.2s
           .link-panning-bg
             transform: rotate(0deg) translate(0px, 0px)
-        &:active
-          background: $accent-color
-          .menu-text
-            color: white
 
         .link-panning-bg
           background: $accent-color
@@ -71,14 +65,29 @@
         background: $accent-color
         .menu-text
           color: white
-        &:hover, &:active
-          background: darken($accent-color, 15%)
+        &:hover
+          background: lighten($accent-color, 5%)
+        &:active
+          transition: 0s
+          background: darken($accent-color, 10%)
+
 
       a.hamburger-menu
-        padding: 10px 15px
-        img
+        padding: 9px 15px
+        height: 42px
+        width: 54px
+        box-sizing: border-box
+        svg
           position: relative
           z-index: 12
           height: 22px
+
         .hamburger-menu-icon
           fill: $accent-color
+          transition: 0.2s
+
+        &:hover, &:active
+          .hamburger-menu-icon
+            fill: white
+
+@import "responsive/responsive_main_menu"
