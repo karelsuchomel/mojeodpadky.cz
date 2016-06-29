@@ -1,0 +1,60 @@
+#content
+  .segment#front-headline
+    margin: 60px auto 0px
+    padding: $universal-padding $universal-padding 0px
+    max-width: ($content-max-width - 200)
+    box-sizing: content-box
+
+    img.head
+      position: relative
+      display: inline-block
+
+    img.head.left
+      float: left
+
+    img.head.right
+      float: right
+
+    h1
+      position: relative
+      display: inline-block
+      font-size: 42px
+      color: black
+      font-style: italic
+      font-weight: 700
+
+    h1.left
+      top: -30px
+      margin-left: 25px
+
+    h1.right
+      top: 60px
+      margin-left: -115px
+
+    .arrow-down-wrap
+      position: absolute
+      top: 270px
+      margin: 0 auto
+      left: 0px
+      right: 0px
+      width: 150px
+      text-align: center
+
+      .text
+        h3.more
+          font-size: 26px
+          color: $accent-color
+          margin: 0
+          line-height: 0.5em
+          position: relative
+          display: inline-block
+          font-style: italic
+          font-weight: 700
+
+      img
+        position: relative
+        margin: 0 auto
+        width: 22px
+        transform: scale(2,1)
+
+@import "responsive/_head_to_head_responsive"

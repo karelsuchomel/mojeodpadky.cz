@@ -40,7 +40,7 @@ function createMessageContent(messageType) {
     return "<a href='#' class='popup-menu-item'><div class='menu-text'>Videa</div></a><a href='#' class='popup-menu-item'><div class='menu-text'>Dokumenty</div></a><a href='#' class='popup-menu-item last-child'><div class='menu-text'>Reference</div></a>"; // Append text node to the div element
   }
   if (messageType == "signIn"){
-    return "<form action='' method='POST'><input type='text' name='login' placeholder='Login'><input type='password' name='psw' placeholder='Heslo'><button type='submit'>Přihlásit</button><input type='checkbox' value='stay-signed-in' id='stay-logged-chxb'><label for='stay-logged-chxb'>Zůstat přihlášen</label><br /><a href='#forgotten-password'><span>Zapomenuté heslo? Pošleme vám nové.</span></a></form><a class='close-message-icon' onclick='closeMessage()'><img src='img/close-icon.svg'></a>"; // Append text node to the div element
+    return "<form action='' method='POST'><input class='text-field' type='text' name='login' placeholder='Login'><input class='text-field' type='password' name='psw' placeholder='Heslo'><button type='submit'>Přihlásit</button><input type='checkbox' value='stay-signed-in' id='stay-logged-chxb'><label for='stay-logged-chxb'>Zůstat přihlášen</label><br /><a href='#forgotten-password'><span>Zapomenuté heslo? Pošleme vám nové.</span></a></form><a class='close-message-icon' onclick='closeMessage()'><img src='img/close-icon.svg'></a>"; // Append text node to the div element
   }
 }
 

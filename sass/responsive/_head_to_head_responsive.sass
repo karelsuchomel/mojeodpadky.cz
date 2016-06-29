@@ -1,0 +1,88 @@
+////////////// 72 em treshold ///////////////
+@media screen and(max-width: 72em)
+  #content
+    .segment#front-headline
+      padding: $universal-padding $universal-padding 0px
+      box-sizing: content-box
+
+      img.head
+        width: 200px
+
+      h1
+        position: absolute
+        font-size: 42px
+        width: 500px
+
+      h1.left
+        margin: 0 auto
+        margin-top: 100px
+        left: 0px
+        right: 0px
+
+      h1.right
+        margin: 0 auto
+        margin-top: 70px
+        left: 0px
+        right: 0px
+
+      .arrow-down-wrap
+        top: 230px
+
+////////////// 53.2 em treshold ///////////////
+@media screen and(max-width: 53.2em)
+  #content
+    .segment#front-headline
+
+      img.head
+        width: 150px
+
+      h1
+        font-size: 32px
+        width: 400px
+
+      h1.left
+        margin-top: 75px
+
+      h1.right
+        margin-top: 25px
+
+      .arrow-down-wrap
+        top: 170px
+
+////////////// 42 em treshold ///////////////
+@media screen and(max-width: 42em)
+  #content
+    .segment#front-headline
+      height: 200px
+
+      img.head
+        position: absolute
+        width: 240px
+        z-index: 0
+
+      img.head.left
+        top: -25px
+        left: -100px
+
+      img.head.right
+        top: -25px
+        right: -100px
+
+      h1
+        font-size: 32px
+        width: 300px
+        z-index: 1
+        line-height: 1em
+        padding: 4px
+        background: transparentize(white, 0.1)
+
+
+////////////// 22 em treshold ///////////////
+@media screen and(max-width: 22em)
+  #content
+    .segment#front-headline
+      .arrow-down-wrap
+        top: 205px
+        .text
+          h3.more
+            font-size: 20px

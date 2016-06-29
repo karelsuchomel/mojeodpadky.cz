@@ -3,32 +3,22 @@ body
   #content
     include main_menu.jade
     
-    #second-segment  
-      div(class="segment text padding")
+    div(id="front-headline", class="segment")
+      img(src="img/head_left.png", class="head left")
+      h1(class="left") Třídím pohodlně
+      h1(class="right") Šetřím peníze
+      img(src="img/head_right.png", class="head right")
+      a(href="#front-video", class="smoothScroll").arrow-down-wrap
+        .text 
+          h3.more Více zde
+        img(src="img/arrow_icon.svg")
+    
+    div(id="front-video", class="segment")
+      .front-video-content
+        iframe(src="https://www.youtube.com/embed/Vx5Kxx6TWlo", frameborder="0", allowfullscreen)
+        h2 Chcete také třídit pohodlně a získat úlevu na poplatku?
+        button Ano, chci
         
-        h2 About us, hello
-        p 
-          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-          | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          
-        img(src="img/maps_placeholder.png")
-          
-        h2 Opened at
-        p
-          | Po-Pá: 09:00-18:00 <br>
-          | Sobota: 09:00-12:00
-        hr  
-        h2 Contact
-        p
-          | Address: Company address 354, 620 01 City<br>
-          | Phone: +420 555 333 222<br> 
-        hr
-          
-        ul
-          li apples
-          li windows
-          li linuxexes
 
       include footer.jade
 
