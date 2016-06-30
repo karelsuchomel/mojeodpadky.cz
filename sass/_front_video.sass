@@ -10,14 +10,58 @@
     padding: $universal-padding
     text-align: center
 
-    iframe
-      width: (560px * 1.5)
-      height: (315px * 1.5)
+    .iframe-wrapper
+      position: relative
+      width: 780px
+      margin: 0 auto
+
+      iframe
+        width: 100%
+        height: 440px
 
     h2
       margin: 25px 0px
       position: relative
       font-size: 36px
       color: black
+      line-height: 1.2em
       font-style: italic
       font-weight: 700
+
+    a.button
+      position: relative
+      overflow: hidden
+      display: inline-block
+      padding: 12px 34px
+      border: 2px solid $accent-color
+      border-radius: 3px
+      transition: 0.2s
+
+      .button-text
+        position: relative
+        z-index: 12
+        font-size: 16px
+        font-weight: 600
+        color: $accent-color
+
+      &:hover, &:active
+        .button-text
+          color: white
+          transition: 0.2s
+        .link-panning-bg
+          transform: rotate(0deg) translate(0px, 0px)
+
+      .link-panning-bg
+        background: $accent-color
+        border: 15px solid $accent-color
+        position: absolute
+        display: block
+        width: 100%
+        height: 42px
+        top: 0px
+        left: 0px
+        transition: 0.2s
+        z-index: 0
+        transform: rotate(30deg) translate(-20px, 100px)
+
+@import "responsive/_responsive_front_video"

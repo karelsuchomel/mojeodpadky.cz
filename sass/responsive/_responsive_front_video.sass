@@ -1,0 +1,29 @@
+////////////// 55 em treshold ///////////////
+@media screen and(max-width: 55em)
+  .segment#front-video
+    .front-video-content
+      .iframe-wrapper
+        position: relative
+        max-width: 780px
+        width: 100%
+        padding-top: 56.25%
+        margin: 0 auto
+
+        iframe
+          position: absolute
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          width: 100%
+          max-height: 440px
+          height: 100%
+
+////////////// 36 em treshold ///////////////
+@media screen and(max-width: 36em)
+  .segment#front-video
+    .front-video-content
+      padding: $universal-padding 10px
+
+      h2
+        font-size: 32px

@@ -15,10 +15,12 @@ body
     
     div(id="front-video", class="segment")
       .front-video-content
-        iframe(src="https://www.youtube.com/embed/Vx5Kxx6TWlo", frameborder="0", allowfullscreen)
+        .iframe-wrapper
+          iframe(src="https://www.youtube.com/embed/Vx5Kxx6TWlo", frameborder="0", allowfullscreen)
         h2 Chcete také třídit pohodlně a získat úlevu na poplatku?
-        button Ano, chci
-        
+        a.button
+          .button-text Ano, chci
+          .link-panning-bg
 
       include footer.jade
 
