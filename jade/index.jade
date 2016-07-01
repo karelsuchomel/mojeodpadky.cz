@@ -8,10 +8,30 @@ body
       h1(class="left") Třídím pohodlně
       h1(class="right") Šetřím peníze
       img(src="img/head_right.png", class="head right")
-      a(href="#front-video", class="smoothScroll").arrow-down-wrap
+      a(class="smoothScroll", onclick="toggleInfoText()").arrow-down-wrap
         .text 
-          h3.more Více zde
-        img(src="img/arrow_icon.svg")
+          h3#more-info-toggle-button.more Více zde
+        img#more-info-arron-icon(src="img/arrow_icon.svg")
+    
+    div(id="more-info", class="segment")
+      hr
+      h2 Třídím pohodlně
+      p
+        | Uvědomujeme si, že spousta lidí dnes nemá čas běhat s vytříděným 
+        | odpadem na sběrné místo a ne každému se chce odpad někam nosit. 
+        | S tímto vědomím své partner vedeme k odvoznému systému tříděného 
+        | odpadu přímo od domu. Někde občané obdrží do domácnosti modrou a 
+        | žlutou nádobu na třídění odpadů, jinde pytle a tam, kde není ani jedno 
+        | možné, se vytvoří společné sběrné místo s kontejnery.
+      
+      h2 Šetřím peníze
+      p
+        | V rámci MESOH jsou stanoveny tři bonusy: bonus třídění, bonus 
+        | efektivního využívání sběrných nádob a bonus snižování produkce 
+        | odpadů. Jak už názvy bonusů prozrazují, MESOH není jen o třídění 
+        | odpadů. Nejen že chceme aby se třídilo co nejvíce, podporujeme i 
+        | způsoby, jakými domácnosti předcházejí vzniku odpadů.
+      hr
     
     div(id="front-video", class="segment")
       .front-video-content
@@ -30,3 +50,5 @@ body
   script(type="text/javascript", src="js/smoothscroll.js")
   // Dim page, show message
   script(type="text/javascript", src="js/dim_message.js")
+  // Landing page specific javascript
+  script(type="text/javascript", src="js/landingpage_switches.js")
