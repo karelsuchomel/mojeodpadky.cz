@@ -27,3 +27,47 @@ function toggleInfoText() {
     moreInfoIsOpened = false;
   }
 }
+
+
+// scroll feedback
+var feedbackContainerWidth = document.getElementById('feedback-container').offsetWidth;
+var feedbackScrollPosition = 0;
+
+$("#feedback-scroll-right").click(function(){
+  $('#feedback-scroll-content').scrollTo(feedbackScrollPosition + feedbackContainerWidth, 300);
+  if (1800 > feedbackScrollPosition){
+    feedbackScrollPosition += feedbackContainerWidth;
+  } else {
+    return;
+  }
+});
+$("#feedback-scroll-left").click(function(){
+  $('#feedback-scroll-content').scrollTo(feedbackScrollPosition - feedbackContainerWidth, 300);
+  if (0 < feedbackScrollPosition){
+    feedbackScrollPosition -= feedbackContainerWidth;
+  } else {
+    return;
+  }
+});
+
+
+// scroll results
+var resultsContainerWidth = document.getElementById('results-container').offsetWidth;
+var resultsScrollPosition = 0;
+
+$("#results-scroll-right").click(function(){
+  $('#results-scroll-content').scrollTo(resultsScrollPosition + resultsContainerWidth, 300);
+  if (1800 > resultsScrollPosition){
+    resultsScrollPosition += resultsContainerWidth;
+  } else {
+    return;
+  }
+});
+$("#results-scroll-left").click(function(){
+  $('#results-scroll-content').scrollTo(resultsScrollPosition - resultsContainerWidth, 300);
+  if (0 < resultsScrollPosition){
+    resultsScrollPosition -= resultsContainerWidth;
+  } else {
+    return;
+  }
+});

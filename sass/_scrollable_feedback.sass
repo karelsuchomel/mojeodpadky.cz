@@ -1,0 +1,103 @@
+#content
+  #client-feedback.segment
+    margin: $universal-padding auto
+    position: relative
+    h3
+      color: $accent-color
+      font-weight: 600
+      font-size: 20px
+      text-decoration: underline
+      text-align: center
+      text-transform: uppercase
+
+    .client-feedback-content
+      max-width: $content-max-width
+      overflow: auto
+      position: relative
+      bottom: -17px
+      padding: 0px $universal-padding
+
+      .client-feedback-wrap
+        width: 1800px // 4*400px
+        margin-top: 20px
+        .feedback
+          margin-right: $universal-padding
+          width: 400px
+          display: inline-block
+          float: left
+
+          img
+            width: 100px
+            display: inline-block
+            float: left
+
+          h4
+            margin: 0px 0px 10px 20px
+            font-size: 18px
+            font-weight: 600
+            float: left
+
+          p
+            margin: 0px 0px 20px 20px
+            float: left
+            font-size: 14px
+            display: inline-block
+            width: 280px
+
+    .white-gradient-overlay
+      position: absolute
+      width: 50px
+      height: 200px
+      top: 45px
+      right: 0px
+      background:
+        image: url('../img/white_gradient.png')
+        size: contain
+      cursor: pointer
+
+      &:hover, &:active
+        img
+          transform: rotate(-90deg) scale(2,1) translateY(10px)
+
+      img
+        position: relative
+        top: 78px
+        right: -10px
+        width: 22px
+        height: 44px
+        transform: rotate(-90deg) scale(2,1)
+        transition: 0.2s
+
+    .white-gradient-overlay#feedback-scroll-left
+      left: 0px
+      right: none
+      transform: rotate(180deg)
+
+    .white-gradient-overlay#results-scroll-left
+      left: 0px
+      right: none
+      transform: rotate(180deg)
+
+#content
+  #client-feedback.segment
+    .client-feedback-content
+      .client-feedback-wrap
+        .result
+          margin-right: $universal-padding
+          width: 300px
+          display: inline-block
+          float: left
+
+          h4
+            margin: 0px 0px 10px 20px
+            font-size: 18px
+            font-weight: 600
+            float: none
+            border-bottom: 1px solid #DCDCDC
+
+          p
+            margin: 0px 0px 20px 20px
+            float: none
+            font-size: 14px
+            display: inline-block
+            width: 300px

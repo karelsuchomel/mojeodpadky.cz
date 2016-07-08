@@ -2,7 +2,6 @@ html, body
   padding: 0
   margin: 0
   font-family: $basic-font
-  color: $basic-font-color
 
 body
   width: 100%
@@ -20,3 +19,51 @@ body
 @import "_more_info"
 
 @import "_front_video"
+
+@import "_news_slideshow"
+
+@import "_scrollable_feedback"
+
+@import "_search_devider"
+
+@import "_contact_devider"
+
+#content
+  #footer.segment
+    max-width: none
+    width: 100%
+    background: #333
+    color: white
+    position: relative
+
+    .top-shelf
+      padding: ($universal-padding / 2) 0px
+      box-sizing: border-box
+      max-width: $content-max-width
+      position: relative
+      margin: 0 auto
+
+      h3
+        color: white
+        font-size: 16px
+        font-weight: 700
+        font-style: italic
+        text-align: center
+
+      .icons-wrap
+        width: 200px
+        position: relative
+        margin: 0 auto
+        text-align: center
+        a
+          display: inline-block
+          margin: 10px
+          img
+
+    .bottom-shelf
+      border-top: 1px solid #777
+      padding: 10px 0px $universal-padding
+      box-sizing: border-box
+      max-width: $content-max-width
+      position: relative
+      margin: 0 auto
