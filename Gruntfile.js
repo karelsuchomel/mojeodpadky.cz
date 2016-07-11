@@ -26,6 +26,7 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         options: {
+          pretty: true,
           data: {
             debug: false
           }
@@ -73,7 +74,7 @@ module.exports = function(grunt) {
   // deploy over FTP
   grunt.loadNpmTasks('grunt-ftp-deploy');
   // set default
-  grunt.registerTask('default', ['sass', 'jade', 'express', 'watch']);
+  grunt.registerTask('default', ['jade', 'express', 'watch']);
   grunt.registerTask('ftp', 'ftp-deploy');
 
 };
