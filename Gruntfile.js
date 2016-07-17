@@ -74,7 +74,7 @@ module.exports = function(grunt) {
   // deploy over FTP
   grunt.loadNpmTasks('grunt-ftp-deploy');
   // set default
-  grunt.registerTask('default', ['jade', 'express', 'watch']);
+  grunt.registerTask('default', ['sass', 'jade', 'express', 'watch']);
   grunt.registerTask('ftp', 'ftp-deploy');
 
 };

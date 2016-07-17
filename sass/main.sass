@@ -66,5 +66,24 @@ body
       padding: 10px 0px $universal-padding
       box-sizing: border-box
       max-width: $content-max-width
-      position: relative
       margin: 0 auto
+
+    .bottom-shelf
+      // width: 200px
+      position: relative
+      // text-align: center
+      a
+        color: white
+        display: inline-block
+        margin: 5px 0px
+        padding: 0px 10px
+        border-right: 1px solid #AAA
+        img
+
+///////////////// 36em /////////////////
+@media screen and(max-width: 36em)
+  #content
+    #footer.segment
+      .bottom-shelf
+        a
+          img

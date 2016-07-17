@@ -14,7 +14,7 @@
       max-width: $content-max-width
       overflow: auto
       position: relative
-      bottom: -17px
+      bottom: -12px
       padding: 0px $universal-padding
 
       .client-feedback-wrap
@@ -101,3 +101,69 @@
             font-size: 14px
             display: inline-block
             width: 300px
+
+////////////// 42.5 em treshold ///////////////
+@media screen and(max-width: 42.5em)
+  #content
+    #client-feedback.segment
+      h3
+        font-size: 18px
+
+      .client-feedback-content
+        padding: 0px ($universal-padding / 2)
+
+      .white-gradient-overlay#feedback-scroll-left
+        display: none
+
+      .white-gradient-overlay#results-scroll-left
+        display: none
+
+
+////////////// 32 em treshold ///////////////
+@media screen and(max-width: 32em)
+  #content
+    #client-feedback.segment
+      .client-feedback-content
+        padding: 0px 10px
+
+        .client-feedback-wrap
+          width: 1500px // 4*350px
+          .feedback
+            width: 350px
+            margin-right: 20px
+            img
+              width: 95px
+
+            h4
+              margin: 0px 0px 5px 10px
+              font-size: 16px
+
+            p
+              margin: 0px 0px 20px 10px
+              font-size: 14px
+              width: 240px
+
+      .white-gradient-overlay#feedback-scroll-left
+        display: none
+
+      .white-gradient-overlay#results-scroll-left
+        display: none
+
+
+  #content
+    #client-feedback.segment
+      .client-feedback-content
+        .client-feedback-wrap#results-container
+          width: 1370px // 4*250px
+          .result
+            margin-right: 20px
+            width: 250px
+
+            h4
+              margin: 0px 0px 10px 0px
+              font-size: 16px
+
+            p
+              margin: 0px 0px 10px 0px
+              font-size: 13px
+              width: 250px
