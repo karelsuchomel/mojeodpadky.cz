@@ -1,20 +1,30 @@
 #content
   #news-slideshow.segment
     max-width: 100%
+    position: relative
 
     .news-content
-      max-width: 1180px
+      position: relative
+      bottom: -17px
+      max-width: 1280px
       margin: 0 auto
       box-sizing: border-box
-      padding: ($universal-padding / 2)
+      padding-left: 0px
+      padding-bottom: 10px
       overflow: auto
 
       .news-wrap
         width: 2000px
 
-        img
-          max-width: 400px
-          width: 90vw
-          position: relative
-          display: block
-          float: left
+
+        ul
+          margin: 0px
+          padding: 0px
+          li
+            max-width: 400px
+            width: 90vw
+            position: relative
+            display: block
+            float: left
+            img
+              max-width: 400px

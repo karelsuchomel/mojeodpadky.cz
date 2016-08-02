@@ -1,5 +1,6 @@
 #content
   #contact-devider.segment
+    overflow: visible
     max-width: none
     width: 100%
     padding: $universal-padding 20px
@@ -47,6 +48,39 @@
           margin-bottom: 15px
           &:focus
             border: 1px solid lighten($accent-color, 10%)
+        #autocomplete-wrap
+          input
+            position: relative
+            z-index: 6
+          position: relative
+          #autocomplete-box
+            display: none
+            position: absolute
+            margin: 0 auto
+            margin-top: -20px
+            background: white
+            max-width: 290px
+            width: 400px
+            box-sizing: border-box
+            border: 1px solid $accent-color
+            color: #333
+            z-index: 5
+
+            ul
+              margin: 0px
+              li
+                text-align: left
+                margin: 0px
+                padding: 8px 12px
+                font-size: 14px
+                border-bottom: 1px solid #EEE
+                &:hover, &:active
+                  background: $accent-color
+                  color: white
+                &:first-child
+                  padding-top: 13px
+                &:last-child
+                  border-bottom: 0px
 
         button.button
           position: relative

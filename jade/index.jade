@@ -44,12 +44,13 @@ body
 
     div(id="news-slideshow", class="segment")
       .news-content
-        .news-wrap
-          img(src="img/slides/slide-01-01.png")
-          img(src="img/slides/slide-02-01.png")
-          img(src="img/slides/slide-03-01.png")
-          img(src="img/slides/slide-04-01.png")
-          img(src="img/slides/slide-05-01.png")
+        .news-wrap.clear-both
+          ul
+            li: img(src="img/slides/slide-02-01.png")
+            li: img(src="img/slides/slide-01-01.png")
+            li: img(src="img/slides/slide-03-01.png")
+            li: img(src="img/slides/slide-04-01.png")
+            li: img(src="img/slides/slide-05-01.png")
             
             
     div(id="client-feedback", class="segment")
@@ -102,6 +103,16 @@ body
           option Burundy
         button(type="submit")
           img(src="img/magnifier_icon.png")
+        #autocomplete-box
+          ul
+            li Brno
+            li Šitbořice
+            li Brno
+            li Šitbořice
+            li Brno
+            li Šitbořice
+            li Brno
+            li Šitbořice
             
             
     div(id="client-feedback", class="segment")
@@ -167,7 +178,18 @@ body
         .left-column
           input(type="text", name="name", placeholder="Jméno" required)
           input(type="email", name="mail", placeholder="E-mail" required)
-          input(type="text", name="city", list="list-of-cities", placeholder="Název vaší obce" required)
+          #autocomplete-wrap
+            input(type="text", name="city", list="list-of-cities", placeholder="Název vaší obce" required)
+            #autocomplete-box
+              ul
+                li Brno
+                li Šitbořice
+                li Brno
+                li Šitbořice
+                li Brno
+                li Šitbořice
+                li Brno
+                li Šitbořice
           button(type="submit").button
             .button-text Odeslat
             .link-panning-bg
