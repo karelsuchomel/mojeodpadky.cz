@@ -26,13 +26,15 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         options: {
-          pretty: true,
+          // pretty: true,
           data: {
             debug: false
           }
         },
         files: {
           'build/index.html': ['jade/index.jade'], // 'destination': 'source'
+          'build/messages/hamburger-menu.html': ['jade/messages/hamburger-menu.jade'], // 'destination': 'source'
+          'build/messages/sign-in-form.html': ['jade/messages/sign-in-form.jade'], // 'destination': 'source'
         }
       }
     },

@@ -3,26 +3,20 @@ var moreInfoIsOpened = false;
 function toggleInfoText() {
   if(moreInfoIsOpened == false) {
     // show the text segment
-    var infoSegment = document.getElementById('more-info');
-    infoSegment.className += ' opened';
+    document.getElementById('more-info').className += ' opened';
     // Change a text in the toggle button
-    var buttonLabel = document.getElementById('more-info-toggle-button')
-    buttonLabel.innerHTML = 'Méně';
+    document.getElementById('more-info-toggle-button').innerHTML = 'Méně';
     // reverse the button's arron direction
-    var buttonArrow = document.getElementById('more-info-arron-icon')
-    buttonArrow.className += ' reverse';
+    document.getElementById('more-info-arron-icon').className += ' reverse';
     // set the value of a swith
     moreInfoIsOpened = true;
   } else {
     // hide the text segment
-    var infoSegment = document.getElementById('more-info');
-    infoSegment.className = 'segment';
+    document.getElementById('more-info').className = 'segment';
     // Change a text in the toggle button
-    var buttonLabel = document.getElementById('more-info-toggle-button')
-    buttonLabel.innerHTML = 'Více zde'
+    document.getElementById('more-info-toggle-button').innerHTML = 'Více zde';
     // reverse the button's arron direction
-    var buttonArrow = document.getElementById('more-info-arron-icon')
-    buttonArrow.className = '';
+    document.getElementById('more-info-arron-icon').className = '';
     // set the value of a swith
     moreInfoIsOpened = false;
   }
