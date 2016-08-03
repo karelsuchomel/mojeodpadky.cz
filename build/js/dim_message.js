@@ -11,6 +11,7 @@ function dimMessage(event) {
   // which element was clicked GLOBAL variable
   elementID = this.id;
 
+  // create DIM element -> to dim the page
   var dimOverlay = document.createElement("DIV");                               // Create a <div> element
   document.body.appendChild(dimOverlay);                                        // Append <div> to <body>
   dimOverlay.setAttribute("id", "dim-element");

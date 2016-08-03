@@ -1,210 +1,204 @@
-include head.jade
-body
-  #content
-    include main_menu.jade
-    
-    div(id="front-headline", class="segment")
-      img(src="img/head_left.png", class="head left")
-      h1(class="left") Třídím pohodlně
-      h1(class="right") Šetřím peníze
-      img(src="img/head_right.png", class="head right")
-      a(class="smoothScroll", onclick="toggleInfoText()").arrow-down-wrap
-        .text 
-          h3#more-info-toggle-button.more Více zde
-        img#more-info-arron-icon(src="img/arrow_icon.svg")
-    
-    div(id="more-info", class="segment")
-      hr
-      h2 Třídím pohodlně
-      p
-        | Uvědomujeme si, že spousta lidí dnes nemá čas běhat s vytříděným 
-        | odpadem na sběrné místo a ne každému se chce odpad někam nosit. 
-        | S tímto vědomím své partner vedeme k odvoznému systému tříděného 
-        | odpadu přímo od domu. Někde občané obdrží do domácnosti modrou a 
-        | žlutou nádobu na třídění odpadů, jinde pytle a tam, kde není ani jedno 
-        | možné, se vytvoří společné sběrné místo s kontejnery.
+doctype html
+html(lang="cs")
+  include head.jade
+  body
+    #content
+      include main_menu.jade
       
-      h2 Šetřím peníze
-      p
-        | V rámci MESOH jsou stanoveny tři bonusy: bonus třídění, bonus 
-        | efektivního využívání sběrných nádob a bonus snižování produkce 
-        | odpadů. Jak už názvy bonusů prozrazují, MESOH není jen o třídění 
-        | odpadů. Nejen že chceme aby se třídilo co nejvíce, podporujeme i 
-        | způsoby, jakými domácnosti předcházejí vzniku odpadů.
-      hr
-    
-    div(id="front-video", class="segment")
-      .front-video-content
-        .iframe-wrapper
-          iframe(src="https://www.youtube.com/embed/l-0bimoOrRI?rel=0&enablejsapi=1&showinfor=0&frameborder=0&modestbranding=1&color=white&showinfo=0&origin=www.mojeodpadky.cz", frameborder="0", rel="0", theme="light", showinfo="0", color="white", allowfullscreen)
-        h2 Chcete také třídit pohodlně a získat úlevu na poplatku?
-        a.button
-          .button-text Ano, chci
-          .link-panning-bg
-
-    div(id="news-slideshow", class="segment")
-      .news-content
-        .news-wrap.clear-both
-          ul
-            li: img(src="img/slides/slide-02-01.png")
-            li: img(src="img/slides/slide-01-01.png")
-            li: img(src="img/slides/slide-03-01.png")
-            li: img(src="img/slides/slide-04-01.png")
-            li: img(src="img/slides/slide-05-01.png")
-            
-            
-    div(id="client-feedback", class="segment")
-      h3 Co o nás říkají klienti
-      .client-feedback-content#feedback-scroll-content
-        .client-feedback-wrap#feedback-container.clear-both
-          .feedback.clear-both
-            img(src="img/shield.png")
-            h4 Město mikulov
-            p 
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-              | eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          .feedback.clear-both
-            img(src="img/shield.png")
-            h4 Město mikulov
-            p 
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-              | eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          .feedback.clear-both
-            img(src="img/shield.png")
-            h4 Město mikulov
-            p 
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-              | eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          .feedback.clear-both
-            img(src="img/shield.png")
-            h4 Město mikulov
-            p 
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-              | eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              
-      .white-gradient-overlay#feedback-scroll-right
-        img(src="img/arrow_icon_grey.svg")
-          
-      .white-gradient-overlay#feedback-scroll-left
-        img(src="img/arrow_icon_grey.svg")
-          
-    div(id="search-devider", class="segment")
-      h2 Jsme ve vaší obci?
-      img#more-info-arron-icon(src="img/arrow_icon.svg")
-      form
-        input(type="text", name="city", list="list-of-cities", placeholder="Napište název vaší obce")
-        datalist(id="list-of-cities")
-          option Brno
-          oprion Praha
-          option Bratislava
-          option Pardubice
-          option Bjorn
-          option Budapest
-          option Burundy
-        button(type="submit")
-          img(src="img/magnifier_icon.png")
-        #autocomplete-box
-          ul
-            li Brno
-            li Šitbořice
-            li Brno
-            li Šitbořice
-            li Brno
-            li Šitbořice
-            li Brno
-            li Šitbořice
-            
-            
-    div(id="client-feedback", class="segment")
-      h3 Jaké máme výsledky
-      .client-feedback-content#results-scroll-content
-        .client-feedback-wrap#results-container.clear-both
-          .result
-            h4 Kobilí
-            p 
-              | Služba zavedena: 1. 1. 2013 <br>
-              | Odměna EKO-KOM (2012): 79 510 Kč <br>
-              | Odměna EKO-KOM (2013): 248 158 Kč <br>
-              | Platba TKO (2013): 227 662 Kč <br>
-              | Platba TKO (2014): 107 710 Kč <br>
-              | Zapojeno domácností: 87% <br>
-          .result
-            h4 Kobilí
-            p 
-              | Služba zavedena: 1. 1. 2013 <br>
-              | Odměna EKO-KOM (2012): 79 510 Kč <br>
-              | Odměna EKO-KOM (2013): 248 158 Kč <br>
-              | Platba TKO (2013): 227 662 Kč <br>
-              | Platba TKO (2014): 107 710 Kč <br>
-              | Zapojeno domácností: 87% <br>
-          .result
-            h4 Kobilí
-            p 
-              | Služba zavedena: 1. 1. 2013 <br>
-              | Odměna EKO-KOM (2012): 79 510 Kč <br>
-              | Odměna EKO-KOM (2013): 248 158 Kč <br>
-              | Platba TKO (2013): 227 662 Kč <br>
-              | Platba TKO (2014): 107 710 Kč <br>
-              | Zapojeno domácností: 87% <br>
-          .result
-            h4 Kobilí
-            p 
-              | Služba zavedena: 1. 1. 2013 <br>
-              | Odměna EKO-KOM (2012): 79 510 Kč <br>
-              | Odměna EKO-KOM (2013): 248 158 Kč <br>
-              | Platba TKO (2013): 227 662 Kč <br>
-              | Platba TKO (2014): 107 710 Kč <br>
-              | Zapojeno domácností: 87% <br>
-          .result
-            h4 Kobilí
-            p 
-              | Služba zavedena: 1. 1. 2013 <br>
-              | Odměna EKO-KOM (2012): 79 510 Kč <br>
-              | Odměna EKO-KOM (2013): 248 158 Kč <br>
-              | Platba TKO (2013): 227 662 Kč <br>
-              | Platba TKO (2014): 107 710 Kč <br>
-              | Zapojeno domácností: 87% <br>
-      .white-gradient-overlay#results-scroll-right
-        img(src="img/arrow_icon_grey.svg")
-          
-      .white-gradient-overlay#results-scroll-left
-        img(src="img/arrow_icon_grey.svg")
-          
-          
-    div(id="contact-devider", class="segment")
-      h2 Kontaktujte nás
-      img#more-info-arron-icon(src="img/arrow_icon.svg")
-      form.clear-both
-        .left-column
-          input(type="text", name="name", placeholder="Jméno" required)
-          input(type="email", name="mail", placeholder="E-mail" required)
-          #autocomplete-wrap
-            input(type="text", name="city", list="list-of-cities", placeholder="Název vaší obce" required)
-            #autocomplete-box
-              ul
-                li Brno
-                li Šitbořice
-                li Brno
-                li Šitbořice
-                li Brno
-                li Šitbořice
-                li Brno
-                li Šitbořice
-          button(type="submit").button
-            .button-text Odeslat
+      div(id="front-headline", class="segment")
+        img(src="img/head_left.png", class="head left", alt="třídím pohodlně")
+        h1(class="left") Třídím pohodlně
+        h1(class="right") Šetřím peníze
+        img(src="img/head_right.png", class="head right", alt="šetřím peníze")
+        a(class="smoothScroll", onclick="toggleInfoText()").arrow-down-wrap
+          .text 
+            h2#more-info-toggle-button.more Více zde
+          img#more-info-arrow-icon.arrow-icon(src="img/arrow_icon.svg", alt="více textu")
+      
+      div(id="more-info", class="segment")
+        hr
+        h2 Třídím pohodlně
+        p
+          | Uvědomujeme si, že spousta lidí dnes nemá čas běhat s vytříděným 
+          | odpadem na sběrné místo a ne každému se chce odpad někam nosit. 
+          | S tímto vědomím své partner vedeme k odvoznému systému tříděného 
+          | odpadu přímo od domu. Někde občané obdrží do domácnosti modrou a 
+          | žlutou nádobu na třídění odpadů, jinde pytle a tam, kde není ani jedno 
+          | možné, se vytvoří společné sběrné místo s kontejnery.
+        
+        h2 Šetřím peníze
+        p
+          | V rámci MESOH jsou stanoveny tři bonusy: bonus třídění, bonus 
+          | efektivního využívání sběrných nádob a bonus snižování produkce 
+          | odpadů. Jak už názvy bonusů prozrazují, MESOH není jen o třídění 
+          | odpadů. Nejen že chceme aby se třídilo co nejvíce, podporujeme i 
+          | způsoby, jakými domácnosti předcházejí vzniku odpadů.
+        hr
+      
+      div(id="front-video", class="segment")
+        .front-video-content
+          .iframe-wrapper
+            iframe(src="https://www.youtube.com/embed/l-0bimoOrRI?rel=0&enablejsapi=1&showinfor=0&frameborder=0&modestbranding=1&color=white&showinfo=0&origin=www.mojeodpadky.cz", showinfo="0", allowfullscreen)
+          h2 Chcete také třídit pohodlně a získat úlevu na poplatku?
+          a.button
+            .button-text Ano, chci
             .link-panning-bg
-        .right-column
-          textarea(name="message", placeholder="Zpráva"  required)
-    
-    include footer.jade
 
-  // JavaScrirpt
-  // smoothscroll + jQuery
-  script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
-  script(type="text/javascript", src="js/smoothscroll.js")
-  // Dim page, show message
-  script(type="text/javascript", src="js/dim_message.js")
-  // Landing page specific javascript
-  script(type="text/javascript", src="js/landingpage_switches.js")
-  // scrollTo js library
-  script(type="text/javascript", src="js/jquery.scrollTo.min.js")
+      div(id="news-slideshow", class="segment")
+        .news-content
+          .news-wrap.clear-both
+            ul
+              li: img(src="img/slides/slide-02-01.png", alt="slide 02")
+              li: img(src="img/slides/slide-01-01.png", alt="slide 01")
+              li: img(src="img/slides/slide-03-01.png", alt="slide 03")
+              li: img(src="img/slides/slide-04-01.png", alt="slide 04")
+              li: img(src="img/slides/slide-05-01.png", alt="slide 05")
+              
+              
+      div(class="client-feedback segment")
+        h3 Co o nás říkají klienti
+        .client-feedback-content#feedback-scroll-content
+          .client-feedback-wrap#feedback-container.clear-both
+            .feedback.clear-both
+              img(src="img/shield.png", alt="erb města Mikulov")
+              h4 Město mikulov
+              p 
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                | eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .feedback.clear-both
+              img(src="img/shield.png", alt="erb města Mikulov")
+              h4 Město mikulov
+              p 
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                | eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            .feedback.clear-both
+              img(src="img/shield.png", alt="erb města Mikulov")
+              h4 Město mikulov
+              p 
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                | eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            .feedback.clear-both
+              img(src="img/shield.png", alt="erb města Mikulov")
+              h4 Město mikulov
+              p 
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                | eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                
+        .white-gradient-overlay#feedback-scroll-right
+          img(src="img/arrow_icon_grey.svg", alt="doprava")
+            
+        .white-gradient-overlay#feedback-scroll-left
+          img(src="img/arrow_icon_grey.svg", alt="doleva")
+            
+      div(id="search-devider", class="segment")
+        h2 Jsme ve vaší obci?
+        img.arrow-icon(src="img/arrow_icon.svg", alt="šipka dolů")
+        form
+          input(type="text", name="city", placeholder="Napište název vaší obce")
+          button(type="submit")
+            img(src="img/magnifier_icon.png", alt="vyhledat")
+          #autocomplete-box
+            ul
+              li Brno
+              li Šitbořice
+              li Brno
+              li Šitbořice
+              li Brno
+              li Šitbořice
+              li Brno
+              li Šitbořice
+              
+              
+      div(class="client-feedback segment")
+        h3 Jaké máme výsledky
+        .client-feedback-content#results-scroll-content
+          .client-feedback-wrap#results-container.clear-both
+            .result
+              h4 Kobilí
+              p 
+                | Služba zavedena: 1. 1. 2013 <br>
+                | Odměna EKO-KOM (2012): 79 510 Kč <br>
+                | Odměna EKO-KOM (2013): 248 158 Kč <br>
+                | Platba TKO (2013): 227 662 Kč <br>
+                | Platba TKO (2014): 107 710 Kč <br>
+                | Zapojeno domácností: 87% <br>
+            .result
+              h4 Kobilí
+              p 
+                | Služba zavedena: 1. 1. 2013 <br>
+                | Odměna EKO-KOM (2012): 79 510 Kč <br>
+                | Odměna EKO-KOM (2013): 248 158 Kč <br>
+                | Platba TKO (2013): 227 662 Kč <br>
+                | Platba TKO (2014): 107 710 Kč <br>
+                | Zapojeno domácností: 87% <br>
+            .result
+              h4 Kobilí
+              p 
+                | Služba zavedena: 1. 1. 2013 <br>
+                | Odměna EKO-KOM (2012): 79 510 Kč <br>
+                | Odměna EKO-KOM (2013): 248 158 Kč <br>
+                | Platba TKO (2013): 227 662 Kč <br>
+                | Platba TKO (2014): 107 710 Kč <br>
+                | Zapojeno domácností: 87% <br>
+            .result
+              h4 Kobilí
+              p 
+                | Služba zavedena: 1. 1. 2013 <br>
+                | Odměna EKO-KOM (2012): 79 510 Kč <br>
+                | Odměna EKO-KOM (2013): 248 158 Kč <br>
+                | Platba TKO (2013): 227 662 Kč <br>
+                | Platba TKO (2014): 107 710 Kč <br>
+                | Zapojeno domácností: 87% <br>
+            .result
+              h4 Kobilí
+              p 
+                | Služba zavedena: 1. 1. 2013 <br>
+                | Odměna EKO-KOM (2012): 79 510 Kč <br>
+                | Odměna EKO-KOM (2013): 248 158 Kč <br>
+                | Platba TKO (2013): 227 662 Kč <br>
+                | Platba TKO (2014): 107 710 Kč <br>
+                | Zapojeno domácností: 87% <br>
+        .white-gradient-overlay#results-scroll-right
+          img(src="img/arrow_icon_grey.svg", alt="doprava")
+            
+        .white-gradient-overlay#results-scroll-left
+          img(src="img/arrow_icon_grey.svg", alt="doleva")
+            
+            
+      div(id="contact-devider", class="segment")
+        h2 Kontaktujte nás
+        img.arrow-icon(src="img/arrow_icon.svg", alt="šipka dolů")
+        form.clear-both
+          .left-column
+            input(type="text", name="name", placeholder="Jméno" required)
+            input(type="email", name="mail", placeholder="E-mail" required)
+            #autocomplete-wrap
+              input(type="text", name="city", placeholder="Název vaší obce" required)
+              #autocomplete-box2
+                ul
+                  li Brno
+                  li Šitbořice
+                  li Brno
+                  li Šitbořice
+                  li Brno
+                  li Šitbořice
+                  li Brno
+                  li Šitbořice
+            button(type="submit").button
+              .button-text Odeslat
+              .link-panning-bg
+          .right-column
+            textarea(name="message", placeholder="Zpráva"  required)
+      
+      include footer.jade
+
+    // JavaScrirpt
+    // smoothscroll + jQuery
+    script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    script(type="text/javascript", src="js/smoothscroll.js")
+    // Dim page, show message
+    script(type="text/javascript", src="js/dim_message.js")
+    // Landing page specific javascript
+    script(type="text/javascript", src="js/landingpage_switches.js")
+    // scrollTo js library
+    script(type="text/javascript", src="js/jquery.scrollTo.min.js")

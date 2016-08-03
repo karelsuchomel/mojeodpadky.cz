@@ -7,7 +7,7 @@ function toggleInfoText() {
     // Change a text in the toggle button
     document.getElementById('more-info-toggle-button').innerHTML = 'Méně';
     // reverse the button's arron direction
-    document.getElementById('more-info-arron-icon').className += ' reverse';
+    document.getElementById('more-info-arrow-icon').className += ' reverse';
     // set the value of a swith
     moreInfoIsOpened = true;
   } else {
@@ -16,7 +16,7 @@ function toggleInfoText() {
     // Change a text in the toggle button
     document.getElementById('more-info-toggle-button').innerHTML = 'Více zde';
     // reverse the button's arron direction
-    document.getElementById('more-info-arron-icon').className = '';
+    document.getElementById('more-info-arrow-icon').className = 'arrow-icon';
     // set the value of a swith
     moreInfoIsOpened = false;
   }
