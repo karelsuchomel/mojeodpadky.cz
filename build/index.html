@@ -10,8 +10,6 @@
     <!-- Links-->
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <!-- JS-->
-    <!-- W3 include html from another file with javascript library-->
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
     <!-- Fonts-->
     <!-- Open Sans 400 600 700italic-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700italic" rel="stylesheet" type="text/css">
@@ -30,7 +28,21 @@
             <div class="link-panning-bg"></div></a><a id="sign-in-menu-button" class="menu">
             <div class="menu-text">Přihlásit</div>
             <div class="link-panning-bg"></div></a><a href="#" class="start-recycle menu">
-            <div class="menu-text">Začít třídit chytře</div></a></div>
+            <div class="menu-text">Začít třídit chytře</div></a>
+          <div id="sign-in-form" class="dim-message-envelope close-menu">
+            <form action="" method="POST">
+              <input type="text" name="login" placeholder="Login" class="text-field">
+              <input type="password" name="psw" placeholder="Heslo" class="text-field">
+              <button type="submit">Přihlásit</button>
+              <input type="checkbox" value="stay-signed-in" id="stay-logged-chxb">
+              <label for="stay-logged-chxb">Zůstat přihlášen</label><br><a href="#forgotten-password"><span>Zapomenuté heslo? Pošleme vám nové.</span></a>
+            </form><a onclick="closeMessage()" class="close-message-icon"><img src="img/close-icon.svg"></a>
+          </div>
+          <div id="hamburger-menu" class="dim-message-envelope close-menu"><a href="#front-video" class="popup-menu-item smoothScroll">
+              <div class="menu-text">Video</div></a><a href="#" class="popup-menu-item">
+              <div class="menu-text">Dokumenty</div></a><a href="#" class="popup-menu-item last-child">
+              <div class="menu-text">Reference</div></a></div>
+        </div>
       </div>
       <div id="front-headline" class="segment"><img src="img/head_left.png" alt="třídím pohodlně" class="head left">
         <h1 class="left">Třídím pohodlně</h1>

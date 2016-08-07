@@ -8,7 +8,7 @@ module.exports = function(grunt) {
         tasks: ['sass'],
       },
       watchJADE: {
-        files: ['jade/*.jade'],
+        files: ['jade/**/*.jade'],
         tasks: ['jade'],
       },
     },

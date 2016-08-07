@@ -26,14 +26,22 @@
 
 // style of the message box
 
-#dim-message-envelope
+@keyframes slideup-box
+  from
+    opacity: 0
+    transform: translate(0px, 25px)
+  to
+    opacity: 1
+    transform:  translate(0px, 0px)
+
+.dim-message-envelope
   position: absolute
   z-index: 10
   top: 70px
   right: 0px
   background: white
   border-radius: 3px
-  animation: slidedown-box 0.2s ease-in-out
+  animation: slideup-box 0.2s ease-in-out
   opacity: 1
   transform: translate(0px, 0px)
   box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.07)
@@ -62,17 +70,7 @@
   .popup-menu-item.last-child
     border-bottom: 0px
 
-@keyframes slidedown-box
-  from
-    opacity: 0
-    transform: translate(0px, 25px)
-  to
-    opacity: 1
-    transform:  translate(0px, 0px)
+// close menu
 
-// sign in message
-
-.fixed-page
-//overflow: hidden
-
-//messages
+.close-menu
+  display: none

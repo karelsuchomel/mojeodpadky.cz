@@ -1,14 +1,15 @@
-form(action='', method='POST')
-  input(class='text-field', type='text', name='login', placeholder='Login')
-  input(class='text-field', type='password', name='psw', placeholder='Heslo')
-  button(type='submit')
-    | Přihlásit
-  input(type='checkbox', value='stay-signed-in', id='stay-logged-chxb')
-  label(for='stay-logged-chxb')
-    | Zůstat přihlášen
-  br
-  a(href='#forgotten-password')
-    span Zapomenuté heslo? Pošleme vám nové.
+#sign-in-form.dim-message-envelope.close-menu
+  form(action='', method='POST')
+    input(class='text-field', type='text', name='login', placeholder='Login')
+    input(class='text-field', type='password', name='psw', placeholder='Heslo')
+    button(type='submit')
+      | Přihlásit
+    input(type='checkbox', value='stay-signed-in', id='stay-logged-chxb')
+    label(for='stay-logged-chxb')
+      | Zůstat přihlášen
+    br
+    a(href='#forgotten-password')
+      span Zapomenuté heslo? Pošleme vám nové.
 
-a(class='close-message-icon', onclick='closeMessage()')
-  img(src='img/close-icon.svg')
+  a(class='close-message-icon', onclick='closeMessage()')
+    img(src='img/close-icon.svg')
