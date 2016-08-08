@@ -45,15 +45,20 @@ html(lang="cs")
             .link-panning-bg
 
       div(id="news-slideshow", class="segment")
-        .news-content
-          .news-wrap.clear-both
+        .news-content#news-scroll-content
+          .news-wrap#news-container.clear-both
             ul
-              li: img(src="img/slides/slide-02-01.png", alt="slide 02")
-              li: img(src="img/slides/slide-01-01.png", alt="slide 01")
-              li: img(src="img/slides/slide-03-01.png", alt="slide 03")
-              li: img(src="img/slides/slide-04-01.png", alt="slide 04")
-              li: img(src="img/slides/slide-05-01.png", alt="slide 05")
-              
+              li.news: img(src="img/slides/slide-02-01.png", alt="slide 02")
+              li.news: img(src="img/slides/slide-01-01.png", alt="slide 01")
+              li.news: img(src="img/slides/slide-03-01.png", alt="slide 03")
+              li.news: img(src="img/slides/slide-04-01.png", alt="slide 04")
+              li.news: img(src="img/slides/slide-05-01.png", alt="slide 05")
+        
+        .white-gradient-overlay#news-scroll-right
+          img(src="img/arrow_icon_grey.svg", alt="doprava")
+            
+        .white-gradient-overlay#news-scroll-left.invisible
+          img(src="img/arrow_icon_grey.svg", alt="doleva")      
               
       div(class="client-feedback segment")
         h3 Co o nás říkají klienti
@@ -87,7 +92,7 @@ html(lang="cs")
         .white-gradient-overlay#feedback-scroll-right
           img(src="img/arrow_icon_grey.svg", alt="doprava")
             
-        .white-gradient-overlay#feedback-scroll-left
+        .white-gradient-overlay#feedback-scroll-left.invisible
           img(src="img/arrow_icon_grey.svg", alt="doleva")
             
       div(id="search-devider", class="segment")
@@ -161,7 +166,7 @@ html(lang="cs")
         .white-gradient-overlay#results-scroll-right
           img(src="img/arrow_icon_grey.svg", alt="doprava")
             
-        .white-gradient-overlay#results-scroll-left
+        .white-gradient-overlay#results-scroll-left.invisible
           img(src="img/arrow_icon_grey.svg", alt="doleva")
             
             

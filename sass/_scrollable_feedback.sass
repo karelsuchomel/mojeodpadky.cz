@@ -15,8 +15,8 @@
       overflow: auto
       position: relative
       bottom: -17px
-      padding: 0px $universal-padding 5px
-
+      // you can remove last zero for different design
+      padding: 0px $universal-padding 5px 0px
       .client-feedback-wrap
         width: 1800px // 4*400px
         margin-top: 20px
@@ -45,6 +45,8 @@
             width: 280px
 
     .white-gradient-overlay
+      opacity: 1
+      transition: 0.2s
       position: absolute
       width: 50px
       height: 200px
@@ -78,6 +80,9 @@
       right: none
       transform: rotate(180deg)
 
+    .white-gradient-overlay.invisible
+      opacity: 0
+
 #content
   .client-feedback.segment
     .client-feedback-content
@@ -89,42 +94,35 @@
           float: left
 
           h4
-            margin: 0px 0px 10px 20px
+            margin: 0px 0px 10px 0px
             font-size: 18px
             font-weight: 600
             float: none
             border-bottom: 1px solid #DCDCDC
 
           p
-            margin: 0px 0px 20px 20px
+            margin: 0px 0px 20px 0px
             float: none
             font-size: 14px
             display: inline-block
             width: 300px
 
-////////////// 42.5 em treshold ///////////////
-@media screen and(max-width: 42.5em)
+////////////// 36 em treshold ///////////////
+@media screen and(max-width: 36em)
+  #content
+    .client-feedback.segment
+      .client-feedback-content
+        padding: 0px ($universal-padding / 2) 5px
+
+////////////// 32 em treshold ///////////////
+@media screen and(max-width: 32em)
   #content
     .client-feedback.segment
       h3
         font-size: 18px
 
       .client-feedback-content
-        padding: 0px ($universal-padding / 2)
-
-      .white-gradient-overlay#feedback-scroll-left
-        display: none
-
-      .white-gradient-overlay#results-scroll-left
-        display: none
-
-
-////////////// 32 em treshold ///////////////
-@media screen and(max-width: 32em)
-  #content
-    .client-feedback.segment
-      .client-feedback-content
-        padding: 0px 10px
+        padding: 0px 10px 5px
 
         .client-feedback-wrap
           width: 1500px // 4*350px
@@ -148,7 +146,6 @@
 
       .white-gradient-overlay#results-scroll-left
         display: none
-
 
   #content
     .client-feedback.segment
